@@ -1,0 +1,15 @@
+{% extends 'userinfo/base.html' %}
+{% block title %}update{% endblock title %}
+{% block contant %}
+<div class="row">
+<div class="col-sm-8 offset-2">
+<h4 class="text-center alert alert-info">Update Date</h4>
+<form action="" method="post">
+{% csrf_token %}
+{{update_d.as_p}}
+<input type="submit" value="Update" class="btn btn-success">
+</form>
+</div> 
+</div>
+
+{% endblock contant %}
